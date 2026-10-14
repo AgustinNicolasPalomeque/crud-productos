@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Productos</title>
+</head>
+<body>
+    <h1>CRUD de Productos</h1>
+    <form id="formulario">
+        <input type="text" id="codigo" placeholder="Código" required>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="number" id="precio" placeholder="Precio" step="0.01" min="0" required>
+        <input type="url" id="imagen" placeholder="Imagen" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-productos"></tbody>
+    </table>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
